@@ -1,0 +1,9 @@
+fifo_arbiter/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+.Xil/
+*.vcd
+xsim.dir/
