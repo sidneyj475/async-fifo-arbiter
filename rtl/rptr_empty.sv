@@ -32,7 +32,7 @@ end
 // Memory read-address pointer
 assign raddr = rbin[ASIZE-1:0];
 
-assign rbinnext = rbin + (ASIZE + 1)'(rinc & ~rempty);
+assign rbinnext = rbin + {{ASIZE{1'b0}}, (rinc && !rempty)};
 assign rgraynext = (rbinnext >> 1) ^ rbinnext;
 
 // Fifo empty when next rptr = synced wptr or on reset

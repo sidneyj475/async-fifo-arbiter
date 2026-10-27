@@ -30,7 +30,7 @@ end
 // Memory write-address pointer
 assign waddr = wbin[ASIZE-1:0];
 
-assign wbinnext = wbin + (ASIZE + 1)'(winc & ~wfull);
+assign wbinnext = wbin + {{ASIZE{1'b0}}, (winc && !wfull)};
 assign wgraynext = (wbinnext >> 1) ^ wbinnext;
 
 // Fifo full when next wptr = synced rptr
