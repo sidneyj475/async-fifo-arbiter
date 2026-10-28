@@ -1,6 +1,6 @@
 # Asynchronous FIFO RTL Design & Verification
 
-A parameterized, dual-clock asynchronous FIFO implemented in SystemVerilog and verified using Verilator and cocotb in a Linux environment via Windows Subsystem for Linux (WSL).
+A parameterized, dual-clock asynchronous FIFO implemented in SystemVerilog and verified using Verilator and cocotb in a Linux environment via Windows Subsystem for Linux (WSL). Verible was also used for formatting and style linting.
 
 
 The design is based on Clifford E. Cummings' asynchronous FIFO architecture and covers clock-domain crossing (CDC), Gray-coded pointer synchronization, full/empty flag generation, and Python-based RTL verification.
